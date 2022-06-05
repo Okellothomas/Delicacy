@@ -17,21 +17,9 @@ public class DelicacyClient {
 
     public static DelicacyAPi getClient() {
 
-        if (retrofit == null) {
-            OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                    .addInterceptor(new Interceptor() {
-                        @Override
-                        public Response intercept(Chain chain) throws IOException {
-                            Request newRequest  = chain.request().newBuilder()
-                                    .build();
-                            return chain.proceed(newRequest);
-                        }
-                    })
-                    .build();
-
+        if (retrofit == null){
             retrofit = new Retrofit.Builder()
                     .baseUrl(Credentials.BASE_URL)
-                    .client(okHttpClient)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
@@ -39,3 +27,23 @@ public class DelicacyClient {
         return retrofit.create(DelicacyAPi.class);
     }
 }
+
+
+//        if (retrofit == null) {
+//            OkHttpClient okHttpClient = new OkHttpClient.Builder()
+//                    .addInterceptor(new Interceptor() {
+//                        @Override
+//                        public Response intercept(Chain chain) throws IOException {
+//                            Request newRequest  = chain.request().newBuilder()
+//                                    .build();
+//                            return chain.proceed(newRequest);
+//                        }
+//                    })
+//                    .build();
+//
+//            retrofit = new Retrofit.Builder()
+//                    .baseUrl(Credentials.BASE_URL)
+//                    .client(okHttpClient)
+//                    .addConverterFactory(GsonConverterFactory.create())
+//                    .build();
+//        }
