@@ -26,7 +26,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'DELICACIES_API_KEY', DelicaciesApiKey
+        it.buildConfigField 'int', 'DELICACIES_API_KEY', DelicaciesApiKey
     }
 }
 
@@ -49,4 +49,5 @@ dependencies {
     // Parceler
     implementation 'org.parceler:parceler-api:1.1.12'
     annotationProcessor 'org.parceler:parceler:1.1.12'
+    //
 }
