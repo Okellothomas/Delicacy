@@ -7,8 +7,8 @@
     <ImageView
         android:layout_width="130dp"
         android:layout_height="100dp"
-        android:id="@+id/restaurantImageView"
-        android:src="waffles"
+        android:id="@+id/delicaciesImageView"
+        android:src="@drawable/delicacies"
         android:scaleType="centerCrop"/>
 
     <LinearLayout
@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/restaurantNameTextView"
+            android:id="@+id/delicaciesNameTextView"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="Restaurant Name"
@@ -31,22 +31,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="One Cuisine Type"
-            android:id="@+id/categoryTextView"
+            android:id="@+id/delicaciesDescriptionTextView"
             android:textStyle="italic"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rating"
-                android:id="@+id/ratingTextView"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:textColor="@color/colorAccent"/>
-        </RelativeLayout>
     </LinearLayout>
 
 
