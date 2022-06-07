@@ -5,6 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.Categories_details">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
@@ -52,30 +55,34 @@
 
        </RelativeLayout>
 
-       <LinearLayout
-           android:orientation="horizontal"
+       <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
 
-           <Button
-               android:text="Save Category"
-               android:background="@color/colorAccent"
-               android:textSize="16sp"
-               android:textColor="@color/colorPrimaryDark"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"/>
-
-           <Button
-               android:layout_marginLeft="40.9dp"
-               android:text="Delete Category"
+           <TextView
+               android:text="Save"
                android:background="@color/colorDivider"
                android:textSize="16sp"
-               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:fontFamily="sans-serif"
+               android:textColor="@color/black"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"/>
 
-       </LinearLayout>
+           <TextView
+               android:text="Delete"
+               android:background="@color/colorDivider"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:fontFamily="sans-serif"
+               android:textColor="@color/black"
+               android:layout_alignParentEnd="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </RelativeLayout>
 
    </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
