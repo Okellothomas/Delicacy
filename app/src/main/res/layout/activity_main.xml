@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Loading..."
         android:textColor="@color/colorPrimary"
-        android:textSize="49sp"
+        android:textSize="42sp"
         android:fontFamily="@font/akronim"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

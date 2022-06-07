@@ -55,6 +55,7 @@ public class Delicacies extends AppCompatActivity {
                     mRecylerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                     mRecylerView.setHasFixedSize(true);
                     showCategories();
+                    hideProgressBar();
                 } else {
                     showUnsuccessfulMessage();
                 }
