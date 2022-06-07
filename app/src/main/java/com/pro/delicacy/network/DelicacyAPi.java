@@ -18,12 +18,10 @@ public interface DelicacyAPi {
 
     @GET("categories.php")
     Call<CategoriesResponse> categoryMeals(
-//            @Query("api_Key") int api_Key
     );
 
     @GET("search.php")
     Call<NameResponse> mealNames(
-//            @Query("api_Key") int api_Key
             @Query("s") String name
     );
 }

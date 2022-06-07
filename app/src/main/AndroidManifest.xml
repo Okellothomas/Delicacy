@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Delicacy"
         tools:targetApi="31">
         <activity
+            android:name=".CategoriesDetails"
+            android:exported="false" />
+        <activity
             android:name=".DelicaciesDetails"
             android:exported="false" />
         <activity
@@ -24,8 +27,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/MyTheme"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/MyTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
