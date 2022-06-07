@@ -38,5 +38,6 @@ public class DelicaciesInstrumentationTest {
         }
         onView(withId(R.id.mealButton)).perform(click());
 //        onView(withId(R.id.locationTextView)).check(matches(withText("Here are all the restaurants near: " + location)));
+        //
     }
 }
