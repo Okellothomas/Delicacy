@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Delicacy</string>
+    <string name="delicacies_categories">Delicacies Categories</string>
 </resources>
