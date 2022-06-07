@@ -1,7 +1,9 @@
 package com.pro.delicacy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -30,6 +32,8 @@ public class Delicacies extends AppCompatActivity {
     @BindView(R.id.recyclerView) RecyclerView mRecylerView;
     @BindView(R.id.errorTextView) TextView mErrorTextView;
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
+    @BindView(R.id.editeMealName) EditText mEditMealName;
+    @BindView(R.id.mealButton) TextView mealButton;
 
     private CategoriesAdapter mAdapter;
 
@@ -40,6 +44,20 @@ public class Delicacies extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delicacies);
         ButterKnife.bind(this);
+
+        // the button and edittext fields.
+        mealButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // get user input
+                String meal = mEditMealName.getText().toString();
+                // declare the intent variable.
+                Intent intent = new Intent(Delicacies.this, Meals.class);
+                intent.putExtra("meal", meal);
+                startActivity(intent);
+            }
+        });
+
 
         DelicacyAPi client = DelicacyClient.getClient();
 

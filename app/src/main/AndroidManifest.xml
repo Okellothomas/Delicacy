@@ -17,15 +17,18 @@
         android:theme="@style/Theme.Delicacy"
         tools:targetApi="31">
         <activity
+            android:theme="@style/MyTheme"
+            android:name=".Meals"
+            android:exported="false" />
+        <activity
             android:name=".CategoriesDetails"
             android:exported="false" />
         <activity
             android:name=".DelicaciesDetails"
             android:exported="false">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.pro.delicacy.Delicacies">
-        </meta-data>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pro.delicacy.Delicacies"/>
         </activity>
         <activity
             android:name=".Delicacies"
