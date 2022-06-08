@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949665137405",
+    "project_id": "delicacy-7112c",
+    "storage_bucket": "delicacy-7112c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949665137405:android:4c0bd9237594d757beb494",
+        "android_client_info": {
+          "package_name": "com.pro.delicacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949665137405-po386usae4saqgv3jmmbjcjgt6l2r2br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqYZ86dks1nFa3qpkNLwJZZAf-EtABzz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949665137405-po386usae4saqgv3jmmbjcjgt6l2r2br.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
