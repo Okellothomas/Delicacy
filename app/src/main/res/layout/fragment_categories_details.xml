@@ -61,23 +61,25 @@
 
            <TextView
                android:text="Save"
-               android:background="@color/colorDivider"
-               android:textSize="16sp"
+               android:background="@drawable/button"
+               android:textSize="20sp"
                android:textStyle="bold"
+               android:textAlignment="center"
                android:fontFamily="sans-serif"
                android:textColor="@color/black"
-               android:layout_width="wrap_content"
+               android:layout_width="120dp"
                android:layout_height="wrap_content"/>
 
            <TextView
                android:text="Delete"
-               android:background="@color/colorDivider"
-               android:textSize="16sp"
+               android:background="@drawable/button"
+               android:textSize="20sp"
                android:textStyle="bold"
+               android:textAlignment="center"
                android:fontFamily="sans-serif"
                android:textColor="@color/black"
                android:layout_alignParentEnd="true"
-               android:layout_width="wrap_content"
+               android:layout_width="120dp"
                android:layout_height="wrap_content"/>
 
        </RelativeLayout>
